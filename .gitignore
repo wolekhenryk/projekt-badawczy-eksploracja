@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Data: ignore the (large) dataset, keep the small label file
+data/*
+!data/hyper-kvasir/
+data/hyper-kvasir/*
+!data/hyper-kvasir/image-labels.csv
+
+# Model artifacts and logs
+*.pt
+*.pth
+*.ckpt
+*.h5
+runs/
+lightning_logs/
+wandb/
+
+# Secrets
+.env
